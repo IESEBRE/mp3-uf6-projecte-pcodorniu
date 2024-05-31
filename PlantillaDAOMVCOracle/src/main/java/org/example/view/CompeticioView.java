@@ -3,7 +3,9 @@ package org.example.view;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class MatriculaView extends JFrame{
+//Classe que representa la vista de la nostra aplicació
+public class CompeticioView extends JFrame{
+    //Atributs
     private JTabbedPane pestanyes;
     private JTable taula;
     private JScrollPane scrollPane1;
@@ -11,27 +13,25 @@ public class MatriculaView extends JFrame{
     private JButton modificarButton;
     private JButton borrarButton;
     private JTextField campNom;
-    private JTextField campPes;
-    private JCheckBox caixaAlumne;
+    private JTextField campEdat;
+    private JCheckBox pilotMundial;
     private JPanel panel;
-    private JTable taulaMat;
-    private JComboBox comboMP;
-    private JTextField campNota;
+    private JTable taulaComp;
+    private JComboBox comboCampeonat;
+    private JTextField campVictoria;
     //private JTabbedPane PanelPestanya;
 
     //Getters
-
-
-    public JTable getTaulaMat() {
-        return taulaMat;
+    public JTable getTaulaComp() {
+        return taulaComp;
     }
 
-    public JComboBox getComboMP() {
-        return comboMP;
+    public JComboBox getComboCampeonat() {
+        return comboCampeonat;
     }
 
-    public JTextField getCampNota() {
-        return campNota;
+    public JTextField getCampVictoria() {
+        return campVictoria;
     }
 
     public JTabbedPane getPestanyes() {
@@ -58,17 +58,17 @@ public class MatriculaView extends JFrame{
         return campNom;
     }
 
-    public JTextField getCampPes() {
-        return campPes;
+    public JTextField getCampEdad() {
+        return campEdat;
     }
 
     public JCheckBox getCaixaAlumne() {
-        return caixaAlumne;
+        return pilotMundial;
     }
 
 
     //Constructor de la classe
-    public MatriculaView() {
+    public CompeticioView() {
 
 
         //Per poder vore la finestra
@@ -78,6 +78,7 @@ public class MatriculaView extends JFrame{
         this.setVisible(false);
     }
 
+        //Mètode per a mostrar missatges d'error
         private void createUIComponents() {
         // TODO: place custom component creation code here
         scrollPane1 = new JScrollPane();
