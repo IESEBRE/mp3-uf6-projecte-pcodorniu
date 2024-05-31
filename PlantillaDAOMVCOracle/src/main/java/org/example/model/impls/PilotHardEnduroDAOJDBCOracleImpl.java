@@ -27,7 +27,7 @@ public class PilotHardEnduroDAOJDBCOracleImpl implements DAO<PilotHardEnduro> {
         PilotHardEnduro pilot = null;
 
         //Carreguem el fitxer de propietats
-        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/system.properties")) {
+        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/database.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -73,7 +73,7 @@ public class PilotHardEnduroDAOJDBCOracleImpl implements DAO<PilotHardEnduro> {
         //Declaració de variables del mètode
         List<PilotHardEnduro> pilot = new ArrayList<>();
 
-        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/system.properties")) {
+        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/database.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -128,7 +128,7 @@ public class PilotHardEnduroDAOJDBCOracleImpl implements DAO<PilotHardEnduro> {
                 "   END; " +
                 "END;";
 
-        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/system.properties")) {
+        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/database.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -152,7 +152,7 @@ public class PilotHardEnduroDAOJDBCOracleImpl implements DAO<PilotHardEnduro> {
     //@Override
     public void insertPilot(PilotHardEnduro pilot) throws DAOException {
 
-        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/system.properties")) {
+        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/database.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -214,7 +214,7 @@ public class PilotHardEnduroDAOJDBCOracleImpl implements DAO<PilotHardEnduro> {
     @Override
     public void update(PilotHardEnduro pilot) throws DAOException {
 
-        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/system.properties")) {
+        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/database.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
@@ -247,7 +247,7 @@ public class PilotHardEnduroDAOJDBCOracleImpl implements DAO<PilotHardEnduro> {
     @Override
     public void delete(Long id) throws DAOException {
 
-        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/system.properties")) {
+        try (FileInputStream input = new FileInputStream("/home/alumne/Documents/MP03/UF6/mp3-uf6-projecte-pcodorniu/PlantillaDAOMVCOracle/src/main/resources/database.properties")) {
             properties.load(input);
         } catch (IOException e) {
             e.printStackTrace();
